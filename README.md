@@ -53,7 +53,7 @@ If you choose an API not listed above, explain:
 
 ### 2. 🤖 Simulate Natural Input Processing
 
-**Goal:** Translate a user input into an action and its parameters.
+**Goal:** Translate an user input into an action and its parameters. You could need an API to use this later
 
 **Implement:**
 
