@@ -97,7 +97,7 @@ def process_user_input(text: str) -> dict:
   "agent": "Ivanti",
   "task": "create_ticket",
   "help_from": {
-    "agent": "ServiceNow",
+    "agent": "Ivanti",
     "reason": "check for duplicates"
   }
 }
