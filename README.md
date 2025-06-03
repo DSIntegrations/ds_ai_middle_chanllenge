@@ -1,128 +1,58 @@
-✅ Technical Challenge - Developer AI Integrations
-Role: Junior to Mid-Level Developer – AI Integrations
-Estimated Duration: 2 to 4 hours
-Submission: GitHub repository (or ZIP file if you prefer)
+# ✅ Technical Challenge – Developer AI Integrations
 
-🎯 Objective
+**Role:** Junior to Mid-Level Developer – AI Integrations  
+**Estimated Time:** 2 to 4 hours  
+**Submission:** GitHub repository (preferred) or ZIP file  
+
+---
+
+## 🎯 Objective
+
 We want to evaluate your ability to:
 
-Integrate external services using APIs.
+- 🔌 Integrate external services using APIs  
+- 🧠 Model actions triggered by intelligent agents  
+- 🛠 Build simple features using public tools  
+- 🤖 Simulate interactions between agents in a multi-agent environment  
 
-Model actions that could be triggered by an intelligent agent.
+> This challenge is for curious developers who enjoy building smart, useful tools and exploring APIs creatively.
 
-Build simple functionalities using public tools.
+---
 
-Think about basic interactions between agents in a simulated multi-agent environment.
+## 🛠 Instructions
 
-This test is designed for curious developers who enjoy building smart, useful tools and exploring APIs.
+1. Clone this repository **or create your own** from scratch.
+2. Work inside a folder called `/solution`.
+3. Include a `README_SOLUCION.md` with:
+   - Setup instructions
+   - How to run your code
+4. Submit your solution via:
+   - GitHub repository (share the link), or
+   - ZIP file (if you prefer)
 
-🛠 Instructions
-Clone this repository or create a new one for your solution.
+---
 
-Work inside a folder named /solution.
+## 📦 Tasks
 
-Include clear instructions in a README_SOLUCION.md file on how to run your project.
+### 1. 🔗 External API Integration
 
-When you’re done, upload it to GitHub and share the link (or send a ZIP file if needed).
+**Goal:** Validate your ability to interact with REST APIs.
 
-📦 Tasks
-1. 🔗 External API Integration
-Goal: Validate your ability to interact with REST APIs.
+- Use a public API (e.g., [JSONPlaceholder](https://jsonplaceholder.typicode.com/), [MockAPI.io](https://mockapi.io/), or one you choose).
+- Implement two basic operations:
+  - ✅ Create a resource (e.g., ticket, contact, user)
+  - 🔍 Retrieve and filter resources based on a condition
 
-Use a public API such as JSONPlaceholder, MockAPI.io, or another of your choice.
+**Bonus:**  
+If you use a different API, briefly explain why you picked it and how you found it.
 
-Implement two actions:
+---
 
-Create a resource (e.g., a ticket, contact, user, etc.)
+### 2. 🤖 Natural Language Input Processing
 
-Retrieve and filter resources based on a specific condition.
+**Goal:** Convert user text into a structured action and parameters.
 
-Bonus: If you choose an API not listed above, explain why you selected it and how you found it.
+- Implement a function:
 
-2. 🤖 Simulate Natural Input Processing
-Goal: Translate a user input into an action and its parameters.
-
-Implement a function called process_user_input(text: str) that takes a string like:
-
-css
-Copy
-Edit
-"I want to escalate a ticket with high priority"
-Return a JSON object like this:
-
-json
-Copy
-Edit
-{
-  "action": "escalate_ticket",
-  "priority": "high"
-}
-You can use your own rules or regular expressions to detect the intent and extract parameters.
-
-3. 🔁 Simulate a Basic Multi-Agent Flow
-Goal: Show how agents might work together to solve a task.
-
-Create a function that simulates Agent A:
-
-It receives a task.
-
-It decides whether it needs help.
-
-If it does, it "calls" Agent B for assistance (simulation only).
-
-Output the flow in JSON or log format. Example:
-
-json
-Copy
-Edit
-{
-  "agent": "Ivanti",
-  "task": "create_ticket",
-  "help_from": {
-    "agent": "ServiceNow",
-    "reason": "check for duplicates"
-  }
-}
-4. 🌐 Integrate an Extra Capability (Public Service)
-Goal: Demonstrate your initiative and ability to research and integrate tools.
-
-Pick a free or freemium service (API or SDK).
-
-Integrate a simple capability. Examples:
-
-Text-to-Speech (gTTS, ElevenLabs, etc.)
-
-Translation (DeepL API, Google Translate)
-
-Sentiment analysis (Hugging Face, TextBlob)
-
-OCR or simple image detection
-
-In your README_SOLUCION.md, explain:
-
-Why you chose this service.
-
-What are the limitations of its free tier.
-
-We’re evaluating your technical decisions, initiative, and clarity of implementation.
-
-📁 Expected Repository Structure
-bash
-Copy
-Edit
-/solution
-├── api_integration.py
-├── process_user_input.py
-├── multi_agent_flow.py
-├── extra_capability.py
-├── requirements.txt
-├── README_SOLUCION.md
-🧠 Tips
-We’re not looking for a perfect solution — we’re more interested in how you think and how you solve problems.
-
-Keep it simple, clear, and focused on working code.
-
-Show creativity if you want bonus points.
-
-🤝 About Us
-We're a small and growing team that loves to build useful AI-powered tools. We work in a relaxed environment, move fast, and enjoy solving real-world problems with code. If you're into APIs, smart assistants, or building cool integrations, we’d love to see what you come up with!
+```python
+def process_user_input(text: str) -> dict:
