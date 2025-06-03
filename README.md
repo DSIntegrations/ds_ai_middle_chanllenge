@@ -17,6 +17,9 @@ We want to evaluate your ability to:
 
 > This test is designed for curious developers who enjoy building smart, useful tools and exploring APIs.
 
+## 🎯 Nice to Have
+
+- If you know and choice to use FastAPI, it rocks
 ---
 
 ## 🛠 Instructions
